@@ -13,5 +13,11 @@ let buttonElement = document.getElementById('button');
 console.log(buttonElement);
 //!comportamento una volta premuto il bottone
 buttonElement.addEventListener('click', function(){
-    
+
 })
+//! creo una box nel main
+let newElement = document.createElement('div');
+newElement.classList.add('square')
+
+let mainElement = document.querySelector('main');
+mainElement.appendChild(newElement);
