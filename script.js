@@ -13,14 +13,18 @@ let buttonElement = document.getElementById('button');
 
 //!comportamento una volta premuto il bottone
 buttonElement.addEventListener('click', function(){
-
+    createBox()
 })
-//! creo 100 box nel mio main con un ciclo for
 
-for (let i = 0; i < 100; i++) {
-    let newElement = document.createElement('div');
-    newElement.classList.add('square')
-    let mainElement = document.querySelector('main');
-    mainElement.appendChild(newElement);
-    
+//!questa funzione genererà 100 box nel mio main
+
+function createBox() {
+    for (let i = 0; i < 100; i++) {
+        let newElement = document.createElement('div');
+        newElement.classList.add('square')
+        let mainElement = document.querySelector('main');
+        mainElement.appendChild(newElement);
+    }
 }
+
+
