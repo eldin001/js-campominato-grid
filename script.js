@@ -10,14 +10,17 @@ Le validazioni e i controlli possiamo farli anche in un secondo momento. */
 
 //! seleziono il bottone e lo salvo in una variabile
 let buttonElement = document.getElementById('button');
-console.log(buttonElement);
+
 //!comportamento una volta premuto il bottone
 buttonElement.addEventListener('click', function(){
 
 })
-//! creo una box nel main
-let newElement = document.createElement('div');
-newElement.classList.add('square')
+//! creo 100 box nel mio main con un ciclo for
 
-let mainElement = document.querySelector('main');
-mainElement.appendChild(newElement);
+for (let i = 0; i < 100; i++) {
+    let newElement = document.createElement('div');
+    newElement.classList.add('square')
+    let mainElement = document.querySelector('main');
+    mainElement.appendChild(newElement);
+    
+}
