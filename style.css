@@ -5,21 +5,59 @@
 }
 
 body {
-    background-color: azure;
+    background-color:antiquewhite;
+}
+
+#wrapper {
+    height: 100vh;
 }
 
 main {
     border: 1px solid black;
     height: 500px;
     width: 500px;
-    margin: 60px auto;
+    margin: 30px auto;
     display: flex;
     flex-wrap: wrap;
+    background-color: rgb(255, 163, 98);
+}
+
+#toolbar {
+    width: 500px;
+    margin: 5px auto;
 }
 
 .square {
     width: calc(100% / 10);
     height: calc(100% / 10);
     border: 1px solid red;
-
 }
+
+.square-medium {
+    width: calc(100% / 9);
+    height: calc(100% / 9);
+    border: 1px solid red;
+}
+
+.square-difficult{
+    width: calc(100% / 7);
+    height: calc(100% / 7);
+    border: 1px solid red;
+}
+
+#button, select{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid green;
+    color: rgb(255, 0, 0);
+    font-size: larger;
+    background-color: aquamarine;
+}
+
+
+
+
+.colored-square {
+    background-color: lightblue;
+}
+
